@@ -4,7 +4,7 @@ import cv2
 import numpy as np
 import sys
 import math
-import python.helmet_detection.box as box
+import python.box as box
 
 class DetectedPerson:
     def __init__(self, ratio, time):

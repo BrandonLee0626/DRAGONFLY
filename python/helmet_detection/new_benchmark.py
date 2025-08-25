@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 import cv2
-import python.helmet_detection.box as box
+import python.box as box
 
 def image_path(index):
     return f'data/helmet_detection/images/BikesHelmets{index}.png'
