@@ -5,6 +5,7 @@ import pickle
 
 aruco_dict = cv2.aruco.Dictionary_get(cv2.aruco.DICT_6X6_250)
 board = cv2.aruco.CharucoBoard_create(7, 5, 1, .8, aruco_dict)
+cv2.imwrite('data/speed_estimation/camera_calibration/charuco_board.png', board.draw((2000, 2000)))
 
 def read_chessboard(images):
     """
@@ -17,8 +18,6 @@ def read_chessboard(images):
     decimator = 0
     # SUB PIXEL CORNER DETECTION CRITERION
     criteria = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 100, 0.00001)
-
-    cv2.imwrite('data/speed_estimation/camera_calibration/charuco_board.png', board.draw((2000, 2000)))
 
     for image in images:
         frame = cv2.imread(image)
