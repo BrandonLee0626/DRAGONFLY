@@ -13,7 +13,7 @@ while True:
     key = cv2.waitKey(1) & 0xFF
 
     if key == 13:
-        path = f'data/speed_estimation/camera_calibration/charuco_chessboard_{cnt}'
+        path = f'data/speed_estimation/camera_calibration/charuco_chessboard/charuco_chessboard_{cnt}'
         cv2.imwrite(path, frame)
         cnt += 1
 
