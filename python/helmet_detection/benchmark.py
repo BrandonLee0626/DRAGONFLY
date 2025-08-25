@@ -5,7 +5,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import numpy as np
 
-import box
+import python.helmet_detection.box as box
 
 model_name = 'custom_yolov8m_helmet_person'
 yolo = YOLO(f'models/{model_name}.pt')
