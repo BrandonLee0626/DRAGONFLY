@@ -1,4 +1,4 @@
-from python.drone import Drone
+from src.drone import Drone
 import cv2
 
 drone = Drone()

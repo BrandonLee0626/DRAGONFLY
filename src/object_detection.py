@@ -2,7 +2,7 @@ from ultralytics import YOLO
 import cv2
 import numpy as np
 
-import python.box as box
+import src.box as box
 
 class HelmetDetection(YOLO):
     """
